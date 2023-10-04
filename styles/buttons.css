@@ -1,0 +1,46 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: background-color 150ms;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: var(--button-bg, #cacaca);
+}
+
+button:hover {
+  background-color: var(--button-bg-hover, #b3b3b3);
+}
+
+button.primary {
+  --button-bg: #1f87ff;
+  --button-bg-hover: #1b6dd1;
+}
+
+button.secondary {
+  --button-bg: #cacaca;
+  --button-bg-hover: #b3b3b3;
+}
+
+button.danger {
+  --button-bg: #ff1f1f;
+  --button-bg-hover: #d11b1b;
+}
+
+button.warning {
+  --button-bg: #ff9900;
+  --button-bg-hover: #d17d00;
+}
+
+button.success {
+  --button-bg: #00c900;
+  --button-bg-hover: #00a300;
+}

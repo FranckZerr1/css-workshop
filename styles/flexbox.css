@@ -1,0 +1,45 @@
+.bar,
+.bar-left,
+.bar-right {
+  display: flex;
+}
+
+.bar {
+  background-color: #1f87ff;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+.bar:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+.bar.around {
+  justify-content: space-around;
+}
+
+.bar-left,
+.bar-right {
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.site-name {
+  font-weight: 700;
+}
+
+.searchbar {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.searchbar,
+.searchbar::placeholder {
+  color: #ffffff;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  text-align: center;
+}

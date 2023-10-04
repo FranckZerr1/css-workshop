@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+}
+
+:root {
+  --link-color: #0077ff;
+  --background-color: #f4f4f4;
+  --nav-background-color: #e6e6e6;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+body * {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--link-color);
+}
+
+main {
+  flex-grow: 1;
+}
